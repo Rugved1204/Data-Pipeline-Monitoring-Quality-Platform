@@ -1,0 +1,13 @@
+check_id,run_id,table_name,check_name,severity,rows_affected,check_ts,details
+1,2,dim_customers,missing_email,WARNING,15,2026-09-03 11:43:53,email is NULL
+2,2,fact_orders,missing_amount,CRITICAL,52,2026-09-03 11:43:53,amount is NULL
+3,2,fact_orders,missing_status,WARNING,26,2026-09-03 11:43:53,status is NULL
+4,2,fact_orders,invalid_order_date,CRITICAL,20,2026-09-03 11:43:53,order_date failed to parse
+5,2,fact_orders,negative_amount,WARNING,10,2026-09-03 11:43:53,amount < 0
+6,2,fact_orders,row_reconciliation,INFO,53,2026-09-03 11:43:53,"rows dropped between staging and curated (dupes, orphans, bad keys)"
+7,3,dim_customers,missing_email,WARNING,15,2026-09-03 11:43:53,email is NULL
+8,3,fact_orders,missing_amount,CRITICAL,52,2026-09-03 11:43:53,amount is NULL
+9,3,fact_orders,missing_status,WARNING,26,2026-09-03 11:43:53,status is NULL
+10,3,fact_orders,invalid_order_date,CRITICAL,20,2026-09-03 11:43:53,order_date failed to parse
+11,3,fact_orders,negative_amount,WARNING,10,2026-09-03 11:43:53,amount < 0
+12,3,fact_orders,row_reconciliation,INFO,53,2026-09-03 11:43:53,"rows dropped between staging and curated (dupes, orphans, bad keys)"

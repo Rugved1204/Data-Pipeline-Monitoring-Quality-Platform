@@ -1,0 +1,4 @@
+run_id,pipeline_name,run_start,run_end,status,rows_read,rows_loaded,rows_rejected,error_message
+1,customer_orders_pipeline,2026-09-03T11:43:53.285002,2026-09-03T11:43:53.285014,FAILED,0,0,0,"Schema mismatch: source file 'orders_raw.csv' contains unexpected column count on row 837 (expected 5, got 3) — load aborted"
+2,customer_orders_pipeline,2026-09-03T11:43:53.326231,2026-09-03T11:43:53.339016,SUCCESS_WITH_WARNINGS,833,780,53,
+3,customer_orders_pipeline,2026-09-03T11:43:53.382817,2026-09-03T11:43:53.394601,SUCCESS_WITH_WARNINGS,833,780,53,
